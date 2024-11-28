@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Fitness Club!</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <link href="images/logo.webp" rel="icon">
+    <style>
+        .carousel-caption h5,
+        .carousel-caption p {
+            color: white; /* changes text color to white */
+            text-shadow:
+                2px 2px 4px rgba(0, 0, 0, 0.7),
+                -2px -2px 4px rgba(0, 0, 0, 0.7),
+                2px -2px 4px rgba(0, 0, 0, 0.7),
+                -2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        .carousel-caption h5 {
+            font-size: 3rem; /* makes the heading bigger */
+        }
+
+        .carousel-caption p {
+            font-size: 1.5rem; /* makes the paragraph text bigger */
+        }
+    </style>
+</head>
+
+<body class="bg-secondary">
+    <!-- Navigation Bar -->
+    <nav class="navbar bg-dark border-bottom border-body navbar-expand-lg bg-body-tertiary sticky-top"
+        data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Fitness Club</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="info.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Carousel -->
+    <div id="carouselExampleDark" class="carousel carousel-dark slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3"
+                aria-label="Slide 4"></button>
+        </div>
+
+        <div class="container">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="images/1.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Reach Your Peak Performance</h5>
+                        <p>Unlock your potential with expert guidance and state-of-the-art equipment. Your fitness
+                            journey starts here.</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="images/2.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Group Workouts, Great Results</h5>
+                        <p>Sweat, laugh, and achieve together with our dynamic group classes for all fitness levels.</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="images/3.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Train Smarter, Not Harder</h5>
+                        <p>Personalized fitness plans tailored to your goals. Let's make every move count.</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="images/4.webp" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Your Health, Our Priority</h5>
+                        <p>Experience a holistic approach to fitness with strength training, cardio, and wellness
+                            programs.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- Three Cards -->
+    <div class="container mt-4 d-flex justify-content-center" style="min-height: 100vh;">
+        <div class="row justify-content-center" style="width: 100%; max-width: 1200px;">
+            <div class="col-sm-4 col-md-3">
+                <div class="card" style="width: 100%;">
+                    <img src="images/guide.avif" class="card-img-top" alt="Fitness Instructor">
+                    <div class="card-body">
+                        <h5 class="card-title">Expert Guidance</h5>
+                        <p class="card-text">Our certified trainers provide personalized coaching to help you achieve
+                            your fitness goals faster and more efficiently.</p>
+                        <a href="#" class="btn btn-dark">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 col-md-3">
+                <div class="card" style="width: 100%;">
+                    <img src="images/sota.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">State-of-the-Art Equipment</h5>
+                        <p class="card-text">Train with the latest and greatest gym equipment, ensuring a smooth and
+                            effective workout experience every time.</p>
+                        <a href="#" class="btn btn-dark">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 col-md-3">
+                <div class="card" style="width: 100%;">
+                    <img src="images/happy.avif" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Motivating Community</h5>
+                        <p class="card-text">Join a supportive community that encourages you every step of the way,
+                            making your fitness journey fun and rewarding.</p>
+                        <a href="#" class="btn btn-dark">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
