@@ -12,7 +12,8 @@
 
 <body class="bg-secondary">
     <!-- Navigation Bar -->
-    <nav class="navbar bg-dark border-bottom border-body navbar-expand-lg bg-body-tertiary sticky-top" data-bs-theme="dark">
+    <nav class="navbar bg-dark border-bottom border-body navbar-expand-lg bg-body-tertiary sticky-top"
+        data-bs-theme="dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html">Fitness Club</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -29,17 +30,17 @@
                         <a class="nav-link active" aria-current="page" href="info.html">Contact Us</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        <a class="nav-link dropdown-toggle" href="classes.html" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
-                            Dropdown
+                            Classes
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="classes.html">MWF Classes</a></li>
+                            <li><a class="dropdown-item" href="classes.html">TTH Classes</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li><a class="dropdown-item" href="classes.html">Check out our classes!</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -50,6 +51,92 @@
             </div>
         </div>
     </nav>
+
+    <!-- Form -->
+    <form action="thankyou.html" method="POST" style="width: 75%; margin-top: 30px; margin-left: auto; margin-right: auto;">
+        <fieldset class="border p-3">
+            <legend class="w-auto">Personal Information</legend>
+
+            <div class="mb-3">
+                <label for="exampleInputName" class="form-label">Full Name</label>
+                <input type="text" class="form-control" id="exampleInputName" required>
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email Address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" required>
+            </div>
+        </fieldset>
+
+        <fieldset class="border p-3">
+            <legend class="w-auto">Select Your Fitness Classes</legend>
+
+            <div class="mb-3 form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckCrossTraining" required>
+                <label class="form-check-label" for="flexCheckCrossTraining">
+                    Cross Training (MWF)
+                </label>
+            </div>
+            <div class="mb-3 form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckSprint" required>
+                <label class="form-check-label" for="flexCheckSprint">
+                    Sprint (MWF)
+                </label>
+            </div>
+            <div class="mb-3 form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckBodyPump" required>
+                <label class="form-check-label" for="flexCheckBodyPump">
+                    Body Pump (MWF)
+                </label>
+            </div>
+            <div class="mb-3 form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckAdvancedCrossTraining" required>
+                <label class="form-check-label" for="flexCheckAdvancedCrossTraining">
+                    Advanced Cross Training (MWF)
+                </label>
+            </div>
+            <div class="mb-3 form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckSpin" required>
+                <label class="form-check-label" for="flexCheckSpin">
+                    Spin (TTH)
+                </label>
+            </div>
+            <div class="mb-3 form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckBodyCombat" required>
+                <label class="form-check-label" for="flexCheckBodyCombat">
+                    BodyCombat (TTH)
+                </label>
+            </div>
+            <div class="mb-3 form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckStepInterval" required>
+                <label class="form-check-label" for="flexCheckStepInterval">
+                    Step Interval (TTH)
+                </label>
+            </div>
+        </fieldset>
+
+        <!-- Google Maps -->
+        <fieldset class="border p-3">
+            <legend class="w-auto">Our Location</legend>
+            <div class="container mt-4 d-flex justify-content-center align-items-center" style="min-height: 60vh;">
+                <div class="row w-100">
+                    <div class="col-md-8 mx-auto">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3131.042800361674!2d-122.08424948469216!3d37.42199977982533!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fbb8c2e4691db%3A0x380c8a2a60a9c1d5!2sGoogleplex!5e0!3m2!1sen!2sus!4v1637230245165!5m2!1sen!2sus"
+                                allowfullscreen="" loading="lazy">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+
+        <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
+            <label class="form-check-label" for="exampleCheck1">Agree to terms</label>
+        </div>
+        <button type="submit" class="btn btn-dark">Submit</button>
+    </form>
 
 </body>
 

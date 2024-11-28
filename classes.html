@@ -8,11 +8,18 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <script src="js/bootstrap.bundle.min.js"></script>
     <link href="images/logo.webp" rel="icon">
+    <style>
+        .table-container {
+            width: 75%;
+            margin: 0 auto;
+        }
+    </style>
 </head>
 
 <body class="bg-secondary">
     <!-- Navigation Bar -->
-    <nav class="navbar bg-dark border-bottom border-body navbar-expand-lg bg-body-tertiary sticky-top" data-bs-theme="dark">
+    <nav class="navbar bg-dark border-bottom border-body navbar-expand-lg bg-body-tertiary sticky-top"
+        data-bs-theme="dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html">Fitness Club</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -23,23 +30,23 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="info.html">Contact Us</a>
+                        <a class="nav-link" href="info.html">Contact Us</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Dropdown
+                        <a class="nav-link dropdown-toggle active" href="classes.html" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Classes
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="classes.html">MWF Classes</a></li>
+                            <li><a class="dropdown-item" href="classes.html">TTH Classes</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li><a class="dropdown-item" href="classes.html">Check out our classes!</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -50,7 +57,144 @@
             </div>
         </div>
     </nav>
-
+    <!-- Table -->
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Class Schedule</h1>
+        <div class="table-container">
+            <table class="table table-striped-columns table-bordered">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Day</th>
+                        <th>Class Name</th>
+                        <th>Time</th>
+                        <th>Instructor</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Monday, Jun 15</td>
+                        <td>Cross Training</td>
+                        <td>06:30 - 07:30</td>
+                        <td>Kelly Johnson</td>
+                    </tr>
+                    <tr>
+                        <td>Monday, Jun 15</td>
+                        <td>Sprint</td>
+                        <td>08:00 - 08:30</td>
+                        <td>Annette Farouki</td>
+                    </tr>
+                    <tr>
+                        <td>Monday, Jun 15</td>
+                        <td>BodyPump</td>
+                        <td>09:00 - 10:00</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>Monday, Jun 15</td>
+                        <td>Advanced Cross Training</td>
+                        <td>17:45 - 18:45</td>
+                        <td>Brooke Henderson</td>
+                    </tr>
+                    <tr>
+                        <td>Monday, Jun 15</td>
+                        <td>MixxedFIT</td>
+                        <td>19:00 - 20:00</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>Tuesday, Jun 16</td>
+                        <td>Cross Training</td>
+                        <td>06:30 - 07:30</td>
+                        <td>Kelly Johnson</td>
+                    </tr>
+                    <tr>
+                        <td>Tuesday, Jun 16</td>
+                        <td>Spin</td>
+                        <td>08:30 - 09:30</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>Tuesday, Jun 16</td>
+                        <td>BodyCombat</td>
+                        <td>09:00 - 10:00</td>
+                        <td>Annette Farouki</td>
+                    </tr>
+                    <tr>
+                        <td>Tuesday, Jun 16</td>
+                        <td>Step Interval</td>
+                        <td>17:30 - 18:30</td>
+                        <td>Colleen Merrigan</td>
+                    </tr>
+                    <tr>
+                        <td>Wednesday, Jun 17</td>
+                        <td>Cross Training</td>
+                        <td>06:30 - 07:30</td>
+                        <td>Kelly Johnson</td>
+                    </tr>
+                    <tr>
+                        <td>Wednesday, Jun 17</td>
+                        <td>Sprint</td>
+                        <td>08:00 - 08:30</td>
+                        <td>Annette Farouki</td>
+                    </tr>
+                    <tr>
+                        <td>Wednesday, Jun 17</td>
+                        <td>BodyPump</td>
+                        <td>09:00 - 10:00</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>Wednesday, Jun 17</td>
+                        <td>Advanced Cross Training</td>
+                        <td>17:45 - 18:45</td>
+                        <td>Brooke Henderson</td>
+                    </tr>
+                    <tr>
+                        <td>Thursday, Jun 18</td>
+                        <td>Spin</td>
+                        <td>08:30 - 09:30</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>Thursday, Jun 18</td>
+                        <td>BodyCombat</td>
+                        <td>09:00 - 10:00</td>
+                        <td>Annette Farouki</td>
+                    </tr>
+                    <tr>
+                        <td>Thursday, Jun 18</td>
+                        <td>Step Interval</td>
+                        <td>17:30 - 18:30</td>
+                        <td>Colleen Merrigan</td>
+                    </tr>
+                    <tr>
+                        <td>Friday, Jun 19</td>
+                        <td>Cross Training</td>
+                        <td>06:30 - 07:30</td>
+                        <td>Kelly Johnson</td>
+                    </tr>
+                    <tr>
+                        <td>Friday, Jun 19</td>
+                        <td>BodyPump</td>
+                        <td>09:00 - 10:00</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>Saturday, Jun 20</td>
+                        <td>Spin</td>
+                        <td>08:00 - 08:45</td>
+                        <td>Kelly Johnson</td>
+                    </tr>
+                    <tr>
+                        <td>Saturday, Jun 20</td>
+                        <td>BodyPump</td>
+                        <td>09:00 - 10:00</td>
+                        <td>Lea Anne Latimer</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
 </body>
 
 </html>
